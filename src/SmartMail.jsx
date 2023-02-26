@@ -27,7 +27,7 @@ const SmartMail = () => {
               "Strategies",
               "Designs",
               "Results",
-              "Klaviyo Experts",
+              "Klaviyo",
             ].map((link, index) => (
               <NavLink
                 to={link.toLowerCase()}

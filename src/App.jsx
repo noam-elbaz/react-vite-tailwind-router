@@ -1,41 +1,15 @@
 import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SmartMail, { smartLoader } from "./SmartMail";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <SmartMail />,
-    loader: smartLoader,
-    children: [
-      {
-        path: "/services",
-        element: <div>SERVICES</div>,
-      },
-      {
-        path: "/strategies",
-        element: <div>Strategies</div>,
-      },
-      {
-        path: "/designs",
-        element: <div>Strategies</div>,
-      },
-      {
-        path: "/results",
-        element: <div>Strategies</div>,
-      },
-      {
-        path: "/klavyio",
-        element: <div>Strategies</div>,
-      },
-    ],
-  },
-]);
 
 function App() {
   return (
-    <div className="h-screen w-screen">
-      <RouterProvider router={router} />
+    <div className="flex h-screen w-screen justify-center">
+      <div className="w-full max-w-6xl pt-32">
+        <div>noamelbaz.com</div>
+        <div>Work Experience</div>
+        <div>Skills</div>
+        <div>Testimonials</div>
+        <div>Projects</div>
+      </div>
     </div>
   );
 }
